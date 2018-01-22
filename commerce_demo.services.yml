@@ -1,0 +1,8 @@
+services:
+  commerce_demo.content_exporter:
+    class: Drupal\commerce_demo\ContentExporter
+    arguments: ['@entity_type.manager']
+
+  commerce_demo.content_importer:
+    class: Drupal\commerce_demo\ContentImporter
+    arguments: ['@path.alias_manager', '@entity_type.manager', '@module_handler']
