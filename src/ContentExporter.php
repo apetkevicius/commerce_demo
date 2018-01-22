@@ -37,13 +37,13 @@ class ContentExporter {
    *
    * @param string $entity_type_id
    *   The entity type ID.
-   * @param string[] $bundles
-   *   The bundles.
+   * @param string $bundle
+   *   The bundle.
    *
    * @return array
    *   The exported entities, keyed by UUID.
    */
-  public function exportAll($entity_type_id, array $bundles) {
+  public function exportAll($entity_type_id, $bundle) {
     $entity_type = $this->entityTypeManager->getDefinition($entity_type_id);
     if (!$entity_type->entityClassImplements(ContentEntityInterface::class)) {
       throw new \InvalidArgumentException(sprintf('The %s entity type is not a content entity type.', $entity_type_id));
@@ -52,7 +52,7 @@ class ContentExporter {
     $storage = $this->entityTypeManager->getStorage($entity_type_id);
     $query = $storage->getQuery();
     if ($bundle_key = $entity_type->getKey('bundle')) {
-      $query->condition($bundle_key, $bundles, 'IN');
+      $query->condition($bundle_key, $bundle);
     }
     $ids = $query->execute();
     if (!$ids) {
@@ -119,8 +119,13 @@ class ContentExporter {
         $export[$field_name] = $list;
       }
     }
-    // Process by entity type ID.
+
     $entity_type_id = $entity->getEntityTypeId();
+    // Perform generic processing.
+    if (substr($entity_type_id, 0, 9) == 'commerce_') {
+      $export = $this->processCommerce($export, $entity);
+    }
+    // Process by entity type ID.
     if ($entity_type_id == 'commerce_product') {
       $export = $this->processProduct($export, $entity);
     }
@@ -128,6 +133,23 @@ class ContentExporter {
       $export = $this->processAttributeValue($export, $entity);
     }
 
+    return $export;
+  }
+
+  /**
+   * Process the exported Commerce entity.
+   *
+   * @param array $export
+   *   The export array.
+   * @param \Drupal\Core\Entity\ContentEntityInterface $entity
+   *   The Commerce entity.
+   *
+   * @return array
+   *   The processed export array.
+   */
+  protected function processCommerce(array $export, ContentEntityInterface $entity) {
+    // Imported entities are always assigned to the default store.
+    unset($export['stores']);
     return $export;
   }
 
@@ -143,8 +165,15 @@ class ContentExporter {
    *   The processed export array.
    */
   protected function processProduct(array $export, ProductInterface $product) {
-    // The imported products are always assigned to the default store.
-    unset($export['stores']);
+    // Export the variations as well.
+    $variations = [];
+    foreach ($product->getVariations() as $variation) {
+      $variations[$variation->uuid()] = $this->export($variation);
+      // The array is keyed by UUID, no need to have it in the export too.
+      unset($variations[$variation->uuid()]['uuid']);
+    }
+    $export['variations'] = $variations;
+
     return $export;
   }
 
