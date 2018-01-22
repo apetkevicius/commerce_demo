@@ -4,6 +4,7 @@ namespace Drupal\commerce_demo;
 
 use Drupal\commerce_product\Entity\ProductAttributeValueInterface;
 use Drupal\commerce_product\Entity\ProductInterface;
+use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 
@@ -129,6 +130,9 @@ class ContentExporter {
     if ($entity_type_id == 'commerce_product') {
       $export = $this->processProduct($export, $entity);
     }
+    elseif ($entity_type_id == 'commerce_product_variation') {
+      $export = $this->processVariation($export, $entity);
+    }
     elseif ($entity_type_id == 'commerce_product_attribute_value') {
       $export = $this->processAttributeValue($export, $entity);
     }
@@ -137,7 +141,7 @@ class ContentExporter {
   }
 
   /**
-   * Process the exported Commerce entity.
+   * Processes the exported Commerce entity.
    *
    * @param array $export
    *   The export array.
@@ -154,7 +158,7 @@ class ContentExporter {
   }
 
   /**
-   * Process the exported product.
+   * Processes the exported product.
    *
    * @param array $export
    *   The export array.
@@ -178,7 +182,24 @@ class ContentExporter {
   }
 
   /**
-   * Process the exported attribute value.
+   * Processes the exported product variation.
+   *
+   * @param array $export
+   *   The export array.
+   * @param \Drupal\commerce_product\Entity\ProductVariationInterface $variation
+   *   The product variation.
+   *
+   * @return array
+   *   The processed export array.
+   */
+  protected function processVariation(array $export, ProductVariationInterface $variation) {
+    // Don't export the product_id backreference, it's automatically populated.
+    unset($export['product_id']);
+    return $export;
+  }
+
+  /**
+   * Processes the exported attribute value.
    *
    * @param array $export
    *   The export array.
