@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.simple
+    - field.field.commerce_product_variation.simple.field_images
+    - field.field.commerce_product_variation.simple.weight
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.simple.default
+targetEntityType: commerce_product_variation
+bundle: simple
+mode: default
+content:
+  field_images:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  price:
+    label: above
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
+hidden:
+  product_id: true
+  sku: true
+  title: true
+  weight: true

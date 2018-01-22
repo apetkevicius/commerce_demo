@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: simple
+label: Simple
+description: ''
+variationType: simple
+injectVariationFields: true
+traits: {  }
+locked: false
