@@ -7,6 +7,7 @@ use Drupal\commerce_product\Entity\ProductInterface;
 use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\taxonomy\TermInterface;
 
 /**
  * Defines the content exporter.
@@ -44,7 +45,7 @@ class ContentExporter {
    * @return array
    *   The exported entities, keyed by UUID.
    */
-  public function exportAll($entity_type_id, $bundle) {
+  public function exportAll($entity_type_id, $bundle = '') {
     $entity_type = $this->entityTypeManager->getDefinition($entity_type_id);
     if (!$entity_type->entityClassImplements(ContentEntityInterface::class)) {
       throw new \InvalidArgumentException(sprintf('The %s entity type is not a content entity type.', $entity_type_id));
@@ -55,6 +56,12 @@ class ContentExporter {
     if ($bundle_key = $entity_type->getKey('bundle')) {
       $query->condition($bundle_key, $bundle);
     }
+    // Root terms need to be imported first.
+    if ($entity_type_id == 'taxonomy_term') {
+      $query->sort('depth_level', 'ASC');
+      $query->sort('name', 'ASC');
+    }
+
     $ids = $query->execute();
     if (!$ids) {
       return [];
@@ -100,8 +107,28 @@ class ContentExporter {
       $storage_definition = $items->getFieldDefinition()->getFieldStorageDefinition();;
       $list = $items->getValue();
       foreach ($list as $delta => $item) {
-        // Remove calculated path values.
-        if ($storage_definition->getType() == 'path') {
+        if ($storage_definition->getType() == 'entity_reference') {
+          $target_entity_type_id = $storage_definition->getSetting('target_type');
+          $target_entity_type = $this->entityTypeManager->getDefinition($target_entity_type_id);
+          if ($target_entity_type->entityClassImplements(ContentEntityInterface::class)) {
+            // Map entity_reference IDs to UUIDs.
+            $item['target_id'] = $this->mapToUuid($target_entity_type_id, $item['target_id']);
+          }
+        }
+        elseif ($storage_definition->getType() == 'image') {
+          // Replace the 'target_id' with the filename.
+          /** @var \Drupal\file\FileInterface $file */
+          $file = $this->entityTypeManager->getStorage('file')->load($item['target_id']);
+          $item['filename'] = $file->getFilename();
+          unset($item['target_id']);
+          // Remove calculated values.
+          unset($item['height']);
+          unset($item['width']);
+          // Remove empty keys.
+          $item = array_filter($item);
+        }
+        elseif ($storage_definition->getType() == 'path') {
+          // Remove calculated values.
           $item = array_intersect_key($item, ['alias' => 'alias']);
         }
         // Simplify items with a single key (such as "value").
@@ -109,6 +136,7 @@ class ContentExporter {
         if ($main_property_name && isset($item[$main_property_name]) && count($item) === 1) {
           $item = $item[$main_property_name];
         }
+
         $list[$delta] = $item;
       }
       // Remove the wrapping array if the field is single-valued.
@@ -135,6 +163,9 @@ class ContentExporter {
     }
     elseif ($entity_type_id == 'commerce_product_attribute_value') {
       $export = $this->processAttributeValue($export, $entity);
+    }
+    elseif ($entity_type_id == 'taxonomy_term') {
+      $export = $this->processTerm($export, $entity);
     }
 
     return $export;
@@ -213,6 +244,51 @@ class ContentExporter {
     // Don't export the weight for now.
     unset($export['weight']);
     return $export;
+  }
+
+  /**
+   * Processes the exported taxonomy term.
+   *
+   * @param array $export
+   *   The export array.
+   * @param \Drupal\taxonomy\TermInterface $term
+   *   The taxonomy term.
+   *
+   * @return array
+   *   The processed export array.
+   */
+  protected function processTerm(array $export, TermInterface $term) {
+    /** @var \Drupal\taxonomy\TermStorageInterface $term_storage */
+    $term_storage = $this->entityTypeManager->getStorage('taxonomy_term');
+    if ($parents = $term_storage->loadParents($term->id())) {
+      // The 'parent' doesn't export properly before Drupal 8.6.0. See #2543726.
+      $parent_ids = array_keys($parents);
+      $parent_ids = array_map(function ($parent_id) {
+        return $this->mapToUuid('taxonomy_term', $parent_id);
+      }, $parent_ids);
+      $export = [
+        'parent' => $parent_ids,
+      ] + $export;
+    }
+
+    return $export;
+  }
+
+  /**
+   * Maps an entity ID to a UUID.
+   *
+   * @param string $entity_type_id
+   *   The entity type ID.
+   * @param int $entity_id
+   *   The entity ID.
+   *
+   * @return string
+   *   The entity UUID.
+   */
+  protected function mapToUuid($entity_type_id, $entity_id) {
+    $storage = $this->entityTypeManager->getStorage($entity_type_id);
+    $entity = $storage->load($entity_id);
+    return $entity->uuid();
   }
 
 }
