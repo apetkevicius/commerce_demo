@@ -8,4 +8,6 @@ dependencies:
   - commerce:commerce
   - commerce:commerce_product
   - commerce_shipping:commerce_shipping
+  - taxonomy_term_depth:taxonomy_term_depth
   - drupal:image
+  - drupal:taxonomy
