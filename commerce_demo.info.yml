@@ -8,6 +8,10 @@ dependencies:
   - commerce:commerce
   - commerce:commerce_product
   - commerce_shipping:commerce_shipping
+  - facets:facets
+  - facets_pretty_paths:facets_pretty_paths
+  - search_api:search_api
+  - search_api:search_api_db
   - taxonomy_term_depth:taxonomy_term_depth
   - drupal:image
   - drupal:taxonomy
