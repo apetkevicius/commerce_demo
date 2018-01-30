@@ -5,4 +5,4 @@ services:
 
   commerce_demo.content_importer:
     class: Drupal\commerce_demo\ContentImporter
-    arguments: ['@path.alias_manager', '@entity_type.manager', '@module_handler']
+    arguments: ['@entity_type.manager']

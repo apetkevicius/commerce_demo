@@ -282,13 +282,14 @@ class ContentExporter {
    * @param int $entity_id
    *   The entity ID.
    *
-   * @return string
-   *   The entity UUID.
+   * @return string|null
+   *   The entity UUID, or NULL if the entity no longer exists.
    */
   protected function mapToUuid($entity_type_id, $entity_id) {
     $storage = $this->entityTypeManager->getStorage($entity_type_id);
     $entity = $storage->load($entity_id);
-    return $entity->uuid();
+
+    return $entity ? $entity->uuid() : NULL;
   }
 
 }

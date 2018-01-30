@@ -1,0 +1,180 @@
+9ea0bcd1-0666-40f9-be2c-8f6aefa00518:
+  vid: brand
+  name: '#FLOATY'
+  path: /floaty
+  depth_level: '1'
+418c07fa-53c9-4b8b-9e03-687b864ae446:
+  vid: brand
+  name: 'American Apparel'
+  path: /american-apparel
+  depth_level: '1'
+9fd9979d-29ee-4edc-bac2-c1adc276c645:
+  vid: brand
+  name: 'Ann Clark'
+  path: /ann-clark
+  depth_level: '1'
+b12043c8-b9db-4dfe-a0b9-ba29b54fc974:
+  vid: brand
+  name: Ariat
+  path: /ariat
+  depth_level: '1'
+c801c149-d714-45e9-9bca-6d7c4c06fb51:
+  vid: brand
+  name: BAN.DO
+  path: /bando
+  depth_level: '1'
+862f64a6-7fff-4eeb-a61a-a74bc42e26ef:
+  vid: brand
+  name: 'Best Made Co'
+  path: /best-made-co
+  depth_level: '1'
+86e7ad3c-4dd6-4f8e-8d33-c5cc52ef6f01:
+  vid: brand
+  name: 'Big Mouth Inc.'
+  path: /big-mouth-inc
+  depth_level: '1'
+465fa27a-2971-4777-9760-96d312443f29:
+  vid: brand
+  name: 'Big Mouth Toys'
+  path: /big-mouth-toys
+  depth_level: '1'
+ff7aa9e6-d4fe-4b04-bd0a-109990a8de6d:
+  vid: brand
+  name: Burman
+  path: /burman
+  depth_level: '1'
+74370309-1293-4847-981c-de80e8375f51:
+  vid: brand
+  name: 'Del Sol'
+  path: /del-sol
+  depth_level: '1'
+f3ce8f1d-102f-4dcf-a5ea-e964fd2ed1a5:
+  vid: brand
+  name: 'Eric Trine'
+  path: /eric-trine
+  depth_level: '1'
+22f0d40b-d9fd-4fe9-9db1-38ca079afd76:
+  vid: brand
+  name: Evercreatures
+  path: /evercreatures
+  depth_level: '1'
+50f30b45-8201-4878-80f8-b95bdc102dc8:
+  vid: brand
+  name: Kikkerland
+  path: /kikkerland
+  depth_level: '1'
+9ed7d293-f2c0-4737-88d6-330ad8f027f2:
+  vid: brand
+  name: KnockKnockStuff
+  path: /knockknockstuff
+  depth_level: '1'
+abfc73a4-ad12-47db-ab93-731be7da338f:
+  vid: brand
+  name: 'Komono Clement'
+  path: /komono-clement
+  depth_level: '1'
+55639b32-82d7-413d-aea8-7d3eb0a791fb:
+  vid: brand
+  name: Nicole-Rhea
+  path: /nicole-rhea
+  depth_level: '1'
+5cddd6c7-5ae4-44e9-9009-02553feb7875:
+  vid: brand
+  name: 'Norm Architects'
+  path: /norm-architects
+  depth_level: '1'
+95b9bcb7-55a5-4998-b36a-f2815cc6efc9:
+  vid: brand
+  name: 'Novum Crafts'
+  path: /novum-crafts
+  depth_level: '1'
+4858e6ba-5836-4609-b087-78207a628d7c:
+  vid: brand
+  name: 'Olde Thompson'
+  path: /olde-thompson
+  depth_level: '1'
+f4211b55-f68e-472d-b27a-2c205f4254d4:
+  vid: brand
+  name: 'P.F. Candle Co.'
+  path: /pf-candle-co
+  depth_level: '1'
+06ea67a8-c783-44f9-b95f-83eca681ef2a:
+  vid: brand
+  name: Pantone
+  path: /pantone
+  depth_level: '1'
+3f4d17d9-e44f-46c2-9ed3-210b389c607e:
+  vid: brand
+  name: Petmate
+  path: /petmate
+  depth_level: '1'
+1177477c-d988-4ed9-92fb-d5bb4e8e922e:
+  vid: brand
+  name: PhotoBox
+  path: /photobox
+  depth_level: '1'
+16e7d1f6-7530-4bed-a6be-d84248858c67:
+  vid: brand
+  name: Poketo
+  path: /poketo
+  depth_level: '1'
+89cef657-1f59-4539-a19b-87b75bf367ba:
+  vid: brand
+  name: RayBan
+  path: /rayban
+  depth_level: '1'
+745b55f7-486b-44a0-af7c-42ea4c5b58bc:
+  vid: brand
+  name: 'Rifle Paper Co'
+  path: /rifle-paper-co
+  depth_level: '1'
+d7514358-adfe-4f99-bac1-7d432e537493:
+  vid: brand
+  name: Slenderella
+  path: /slenderella
+  depth_level: '1'
+9ff2f727-7fe1-403e-9005-9317b395303c:
+  vid: brand
+  name: Sunnylife
+  path: /sunnylife
+  depth_level: '1'
+e8588a08-573d-4d48-8b32-f9d0e7fab556:
+  vid: brand
+  name: 'Søren Rose'
+  path: /soren-rose
+  depth_level: '1'
+6f4d841a-fbf6-4cfd-9017-cdb3db84e81f:
+  vid: brand
+  name: 'Todd Sanders'
+  path: /todd-sanders
+  depth_level: '1'
+7854ca62-44ae-43e1-969d-247104c18b17:
+  vid: brand
+  name: 'Torre & Tagus'
+  path: /torre-tagus
+  depth_level: '1'
+a10329b4-366f-4d5f-82d1-085d128e17e7:
+  vid: brand
+  name: 'Turtle Fur Lifestyle'
+  path: /turtle-fur-lifestyle
+  depth_level: '1'
+116a809e-6ed4-41b4-a416-89e6cd0a5cc8:
+  vid: brand
+  name: Umbra
+  path: /umbra
+  depth_level: '1'
+15051197-87ac-4650-bb55-fbf9220fd965:
+  vid: brand
+  name: 'Uncommon Goods'
+  path: /uncommon-goods
+  depth_level: '1'
+316b2893-6876-49e0-9ce6-68d8751bc8b9:
+  vid: brand
+  name: 'Urban Hipster'
+  path: /urban-hipster
+  depth_level: '1'
+896bd790-25e6-4066-a8dd-0febfd63e12f:
+  vid: brand
+  name: 'W&P Designs'
+  path: /wp-designs
+  depth_level: '1'
