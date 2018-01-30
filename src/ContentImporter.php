@@ -61,6 +61,7 @@ class ContentImporter {
       ['commerce_product_attribute_value', 'color'],
       ['commerce_product_attribute_value', 'size'],
       ['commerce_product', 'clothing'],
+      ['commerce_product', 'simple'],
     ];
     foreach ($available_content as $keys) {
       $this->importAll($keys[0], $keys[1]);
@@ -134,7 +135,7 @@ class ContentImporter {
           $target_entity_type = $this->entityTypeManager->getDefinition($target_entity_type_id);
           if ($target_entity_type->entityClassImplements(ContentEntityInterface::class)) {
             $target_entity = $this->loadEntityByUuid($target_entity_type_id, $item);
-            if ($entity) {
+            if ($target_entity) {
               $items[$delta] = $target_entity->id();
             }
             else {
@@ -146,8 +147,7 @@ class ContentImporter {
           $file = $this->ensureFile($item['filename']);
           $items[$delta] = [
             'target_id' => $file->id(),
-            'alt' => $item['alt'],
-          ];
+          ] + $item;
         }
         $values[$field_name] = $items;
       }
