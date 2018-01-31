@@ -5,6 +5,7 @@ dependencies:
     - commerce_product.commerce_product_variation_type.simple
     - field.field.commerce_product_variation.simple.field_images
     - field.field.commerce_product_variation.simple.weight
+    - image.style.product
   module:
     - commerce_price
     - image
@@ -14,18 +15,18 @@ bundle: simple
 mode: default
 content:
   field_images:
-    weight: 1
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
+      image_style: product
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   price:
-    label: above
+    label: hidden
     type: commerce_price_default
-    weight: 0
+    weight: 1
     region: content
     settings:
       strip_trailing_zeroes: false
