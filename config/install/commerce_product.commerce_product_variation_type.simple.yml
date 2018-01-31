@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: simple
 label: Simple
-orderItemType: default
+orderItemType: physical_product_variation
 generateTitle: true
 traits:
   - purchasable_entity_shippable
