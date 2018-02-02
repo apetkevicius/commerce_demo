@@ -5,7 +5,11 @@ dependencies:
     - search_api.index.products
     - views.view.product_catalog
   module:
+    - facets_pretty_paths
     - search_api
+third_party_settings:
+  facets_pretty_paths:
+    coder: taxonomy_term_coder
 id: brand
 name: Brand
 url_alias: brand
