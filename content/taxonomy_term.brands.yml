@@ -1,145 +1,148 @@
-9ea0bcd1-0666-40f9-be2c-8f6aefa00518:
-  vid: brand
-  name: '#FLOATY'
+26fd2bdd-5e03-4d51-b15a-79de897fe710:
+  vid: brands
+  name: Basics
   depth_level: '1'
-418c07fa-53c9-4b8b-9e03-687b864ae446:
-  vid: brand
-  name: 'American Apparel'
+66e0dcfd-391c-4e6c-9761-e98bca21794a:
+  vid: brands
+  name: Bass
   depth_level: '1'
-9fd9979d-29ee-4edc-bac2-c1adc276c645:
-  vid: brand
-  name: 'Ann Clark'
+cca97a23-5213-44d9-a9fc-0f0e4450aba7:
+  vid: brands
+  name: Chloé
   depth_level: '1'
-b12043c8-b9db-4dfe-a0b9-ba29b54fc974:
-  vid: brand
-  name: Ariat
+c1419d23-20e9-4f33-9713-6d9ffde0a688:
+  vid: brands
+  name: 'Class 6'
   depth_level: '1'
-c801c149-d714-45e9-9bca-6d7c4c06fb51:
-  vid: brand
-  name: BAN.DO
+e1a74dd7-081f-4fb8-bc47-5c533010f133:
+  vid: brands
+  name: Dior
   depth_level: '1'
-862f64a6-7fff-4eeb-a61a-a74bc42e26ef:
-  vid: brand
-  name: 'Best Made Co'
+76685424-351a-4668-882a-9169ac560536:
+  vid: brands
+  name: Favorit
   depth_level: '1'
-86e7ad3c-4dd6-4f8e-8d33-c5cc52ef6f01:
-  vid: brand
-  name: 'Big Mouth Inc.'
+5b1f381f-b8aa-41ad-9631-147381497ca0:
+  vid: brands
+  name: 'Gentlemen''s Hardware'
   depth_level: '1'
-465fa27a-2971-4777-9760-96d312443f29:
-  vid: brand
-  name: 'Big Mouth Toys'
+b868528d-7418-4966-ac7b-1c203fd02f46:
+  vid: brands
+  name: Globe
   depth_level: '1'
-ff7aa9e6-d4fe-4b04-bd0a-109990a8de6d:
-  vid: brand
-  name: Burman
+3f08c4d5-ae7d-434d-9fa6-fa27bc32cfa6:
+  vid: brands
+  name: GoPro
   depth_level: '1'
-74370309-1293-4847-981c-de80e8375f51:
-  vid: brand
-  name: 'Del Sol'
+3a3c1b74-e33b-4e55-9acc-cd81e09c8443:
+  vid: brands
+  name: 'Happy Camper'
   depth_level: '1'
-f3ce8f1d-102f-4dcf-a5ea-e964fd2ed1a5:
-  vid: brand
-  name: 'Eric Trine'
+31a0e2a9-04c6-4b52-943c-59cff532a2b4:
+  vid: brands
+  name: Hers
   depth_level: '1'
-22f0d40b-d9fd-4fe9-9db1-38ca079afd76:
-  vid: brand
-  name: Evercreatures
+7310b46b-170e-47da-b4eb-6d6e2f4f74dc:
+  vid: brands
+  name: Herschel
   depth_level: '1'
-50f30b45-8201-4878-80f8-b95bdc102dc8:
-  vid: brand
-  name: Kikkerland
+1480694a-908d-455f-bc1f-ac106c679685:
+  vid: brands
+  name: Jrink
   depth_level: '1'
-9ed7d293-f2c0-4737-88d6-330ad8f027f2:
-  vid: brand
-  name: KnockKnockStuff
+64af5ba7-1fc1-457c-9ded-3cea952abcac:
+  vid: brands
+  name: Kodak
   depth_level: '1'
-abfc73a4-ad12-47db-ab93-731be7da338f:
-  vid: brand
-  name: 'Komono Clement'
+2da9f004-dee2-4b8d-9199-7ca5940aca87:
+  vid: brands
+  name: Level
   depth_level: '1'
-55639b32-82d7-413d-aea8-7d3eb0a791fb:
-  vid: brand
-  name: Nicole-Rhea
+7e049019-f8bb-4ff7-9751-4b5700a7329d:
+  vid: brands
+  name: 'Life''s a Beach'
   depth_level: '1'
-5cddd6c7-5ae4-44e9-9009-02553feb7875:
-  vid: brand
-  name: 'Norm Architects'
+06532c63-3bc9-4bb3-b313-aa754e2f5e5b:
+  vid: brands
+  name: 'Made Wild'
   depth_level: '1'
-95b9bcb7-55a5-4998-b36a-f2815cc6efc9:
-  vid: brand
-  name: 'Novum Crafts'
+9c3e818e-7636-4afc-9b07-df56a673984d:
+  vid: brands
+  name: 'Modern Furnishings'
   depth_level: '1'
-4858e6ba-5836-4609-b087-78207a628d7c:
-  vid: brand
-  name: 'Olde Thompson'
+a76559b4-671b-4156-b25a-085c57453838:
+  vid: brands
+  name: 'Modern Man'
   depth_level: '1'
-f4211b55-f68e-472d-b27a-2c205f4254d4:
-  vid: brand
-  name: 'P.F. Candle Co.'
+560846b1-db65-44f8-ad06-b2663055d757:
+  vid: brands
+  name: MVMT
   depth_level: '1'
-06ea67a8-c783-44f9-b95f-83eca681ef2a:
-  vid: brand
-  name: Pantone
+1a2e393f-230b-412b-977f-4281f2501635:
+  vid: brands
+  name: 'NC Inc'
   depth_level: '1'
-3f4d17d9-e44f-46c2-9ed3-210b389c607e:
-  vid: brand
-  name: Petmate
+b309493e-fb6d-4354-80ac-ab98778a60e7:
+  vid: brands
+  name: 'Nice Kicks'
   depth_level: '1'
-1177477c-d988-4ed9-92fb-d5bb4e8e922e:
-  vid: brand
-  name: PhotoBox
+de09622a-9f7e-4229-a8e6-2ae4bda2f435:
+  vid: brands
+  name: 'Nike SB'
   depth_level: '1'
-16e7d1f6-7530-4bed-a6be-d84248858c67:
-  vid: brand
-  name: Poketo
+108cf8f0-b6b2-4f93-897d-cf6d1b6e9fce:
+  vid: brands
+  name: 'NY Threads'
   depth_level: '1'
-89cef657-1f59-4539-a19b-87b75bf367ba:
-  vid: brand
-  name: RayBan
+511ca369-ce2e-4509-a39e-a128db96f1ec:
+  vid: brands
+  name: 'Paper Co.'
   depth_level: '1'
-745b55f7-486b-44a0-af7c-42ea4c5b58bc:
-  vid: brand
-  name: 'Rifle Paper Co'
-  path: /rifle-paper-co
+0c49bdec-02c0-4a77-a0c1-1d67f4625046:
+  vid: brands
+  name: Polaroid
   depth_level: '1'
-d7514358-adfe-4f99-bac1-7d432e537493:
-  vid: brand
-  name: Slenderella
+8add18b6-f784-416c-b82f-2172420f1a61:
+  vid: brands
+  name: 'Pool Toys Inc.'
   depth_level: '1'
-9ff2f727-7fe1-403e-9005-9317b395303c:
-  vid: brand
-  name: Sunnylife
+01aa3b07-7007-4e6d-87bc-fa938b6d9d2f:
+  vid: brands
+  name: 'Pretty Things'
   depth_level: '1'
-e8588a08-573d-4d48-8b32-f9d0e7fab556:
-  vid: brand
-  name: 'Søren Rose'
+d709eebb-738d-4c38-8803-ae52be58500e:
+  vid: brands
+  name: Sonos
   depth_level: '1'
-6f4d841a-fbf6-4cfd-9017-cdb3db84e81f:
-  vid: brand
-  name: 'Todd Sanders'
+1d7cfa02-94c2-41b6-a326-b72f0c2f6729:
+  vid: brands
+  name: Teerific
   depth_level: '1'
-7854ca62-44ae-43e1-969d-247104c18b17:
-  vid: brand
-  name: 'Torre & Tagus'
+9818d941-c0fd-4c5c-83d1-36c854e9d683:
+  vid: brandsss
+  name: 'Two Faced'
   depth_level: '1'
-a10329b4-366f-4d5f-82d1-085d128e17e7:
-  vid: brand
-  name: 'Turtle Fur Lifestyle'
-  depth_level: '1'
-116a809e-6ed4-41b4-a416-89e6cd0a5cc8:
-  vid: brand
-  name: Umbra
-  depth_level: '1'
-15051197-87ac-4650-bb55-fbf9220fd965:
-  vid: brand
-  name: 'Uncommon Goods'
+cbacbf54-cacd-4cd9-8837-eb9de8cca699:
+  vid: brands
+  name: Unsplash
   depth_level: '1'
 316b2893-6876-49e0-9ce6-68d8751bc8b9:
-  vid: brand
+  vid: brands
   name: 'Urban Hipster'
   depth_level: '1'
-896bd790-25e6-4066-a8dd-0febfd63e12f:
-  vid: brand
-  name: 'W&P Designs'
+b69918d2-fec2-4822-823c-5be43405a00f:
+  vid: brands
+  name: 'Urban Threads'
+  depth_level: '1'
+3eed340e-4ad4-457b-b22f-fb51b432eb49:
+  vid: brands
+  name: Vans
+  depth_level: '1'
+035b8ee5-1b33-4092-a1f6-4eeddc692154:
+  vid: brands
+  name: Vinta
+  depth_level: '1'
+ebdbac42-19ab-4a03-9f3c-45795be3ac44:
+  vid: brands
+  name: 'Wood & Co.'
   depth_level: '1'
