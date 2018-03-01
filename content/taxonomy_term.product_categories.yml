@@ -68,26 +68,12 @@ ce786350-a6c5-44b4-8800-13da5bae619b:
   name: Home
   weight: '1'
   depth_level: '2'
-2e9f9776-7017-4cfe-9818-8b38c4804382:
-  parent:
-    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
-  vid: product_categories
-  name: 'Mason Jars'
-  weight: '2'
-  depth_level: '2'
 aa046f49-a4cf-4278-840a-2f0e6646c407:
   parent:
     - 1cdb9879-80aa-4534-99f3-c3a09b851edd
   vid: product_categories
   name: Outdoors
   weight: '3'
-  depth_level: '2'
-6f265e3a-c2b8-47ae-881c-e48e8b160ed3:
-  parent:
-    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
-  vid: product_categories
-  name: Pets
-  weight: '4'
   depth_level: '2'
 c3f0cb56-1b78-429d-a310-f40ae3915953:
   parent:
@@ -107,20 +93,6 @@ fc14b667-b68d-417a-8f42-a4ec956190f1:
     - 3fada410-028e-40a4-bec5-b175fc5372ac
   vid: product_categories
   name: Accessories
-  depth_level: '3'
-8d5f9935-9e8b-4a26-9a9c-0e976e2282ef:
-  parent:
-    - d3e09fd0-c364-4c96-a41a-a2f14fda6a37
-  vid: product_categories
-  name: Bags
-  weight: '2'
-  depth_level: '3'
-30d1b8a5-fed8-463e-b737-bc8468989021:
-  parent:
-    - d3e09fd0-c364-4c96-a41a-a2f14fda6a37
-  vid: product_categories
-  name: Blankets
-  weight: '1'
   depth_level: '3'
 a4dfc396-e34a-4741-9ed4-4898efebab6d:
   parent:
