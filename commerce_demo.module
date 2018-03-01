@@ -16,7 +16,7 @@ function commerce_demo_menu_links_discovered_alter(&$links) {
   $alias_cleaner = \Drupal::service('pathauto.alias_cleaner');
   $facet_storage = \Drupal::entityTypeManager()->getStorage('facets_facet');
   $term_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
-  $view_url = Url::fromRoute('view.product_catalog.page_1', [], ['absolute' => TRUE]);
+  $view_url = Url::fromRoute('view.product_catalog.page_1');
   $view_url = $view_url->toString();
 
   foreach ($links as &$link) {
@@ -29,7 +29,7 @@ function commerce_demo_menu_links_discovered_alter(&$links) {
       $facet = $facet_storage->load($term->bundle());
       $label = $alias_cleaner->cleanString($term->label());
 
-      $link['url'] = $view_url . '/' . $facet->getUrlAlias() . '/' . $label . '-' . $term->id();
+      $link['url'] = 'internal:' . $view_url . '/' . $facet->getUrlAlias() . '/' . $label . '-' . $term->id();
       $link['route_name'] = '';
       $link['route_parameters'] = [];
       $link['load arguments'] = [];
