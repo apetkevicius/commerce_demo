@@ -14,7 +14,7 @@ use Drupal\Core\Url;
  */
 function commerce_demo_menu_links_discovered_alter(&$links) {
   $alias_cleaner = \Drupal::service('pathauto.alias_cleaner');
-  $facet_storage = \Drupal::entityTypeManager()->getStorage('facet');
+  $facet_storage = \Drupal::entityTypeManager()->getStorage('facets_facet');
   $term_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
   $view_url = Url::fromRoute('view.product_catalog.page_1', [], ['absolute' => TRUE]);
   $view_url = $view_url->toString();
