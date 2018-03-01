@@ -1,7 +1,7 @@
 Provides a demo store for Commerce 2.x.
 
 Included:
-- Over 30 products with free-to-use images.
+- 45 products with free-to-use images.
 - A "Simple" product type (single variation per product)
 - A "Clothing" product type (Color, Size product attributes)
 - Product categories
