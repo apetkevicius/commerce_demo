@@ -61,6 +61,10 @@ display:
             next: ››
       style:
         type: default
+        options:
+          row_class: col-md-3
+          default_row_class: true
+          uses_fields: false
       row:
         type: search_api
         options:
