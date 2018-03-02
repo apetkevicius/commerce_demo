@@ -12,4 +12,13 @@ function commerce_demo_install() {
   if (!\Drupal::isConfigSyncing()) {
     \Drupal::getContainer()->get('commerce_demo.content_importer')->onInstall();
   }
+
+  // Workaround for https://www.drupal.org/project/search_api/issues/2949379
+  /** @var \Drupal\commerce\Config\ConfigUpdaterInterface $config_updater */
+  $config_updater = \Drupal::service('commerce.config_updater');
+  $config_updater->revert(['search_api.index.products'], FALSE);
+  $index_storage = \Drupal::entityTypeManager()->getStorage('search_api_index');
+  /** @var \Drupal\search_api\IndexInterface $index */
+  $index = $index_storage->load('products');
+  $index->indexItems();
 }
