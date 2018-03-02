@@ -6,10 +6,9 @@ dependencies:
     - core.entity_view_mode.commerce_product_variation.catalog
     - field.field.commerce_product_variation.simple.field_images
     - field.field.commerce_product_variation.simple.weight
-    - image.style.catalog
   module:
     - commerce_price
-    - image
+    - image_delta_formatter
 id: commerce_product_variation.simple.catalog
 targetEntityType: commerce_product_variation
 bundle: simple
@@ -19,10 +18,11 @@ content:
     weight: 0
     label: hidden
     settings:
+      deltas: '0'
       image_style: catalog
-      image_link: ''
+      deltas_reversed: 0
     third_party_settings: {  }
-    type: image
+    type: image_delta_formatter
     region: content
   price:
     label: hidden

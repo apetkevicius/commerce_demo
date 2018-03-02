@@ -10,6 +10,7 @@
         "drupal/commerce_shipping": "^2.0",
         "drupal/facets": "^1.0",
         "drupal/facets_pretty_paths": "^1.0",
+        "drupal/image_delta_formatter": "1.x-dev",
         "drupal/pathauto": "^1.0",
         "drupal/search_api": "^1.0",
         "drupal/taxonomy_term_depth": "2.x-dev"
