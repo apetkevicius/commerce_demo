@@ -6,6 +6,7 @@ core: 8.x
 dependencies:
   - color_field:color_field
   - commerce:commerce
+  - commerce:commerce_cart
   - commerce:commerce_product
   - commerce:commerce_tax
   - commerce_shipping:commerce_shipping
