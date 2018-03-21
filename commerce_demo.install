@@ -16,7 +16,16 @@ function commerce_demo_install() {
   // Workaround for https://www.drupal.org/project/search_api/issues/2949379
   /** @var \Drupal\commerce\Config\ConfigUpdaterInterface $config_updater */
   $config_updater = \Drupal::service('commerce.config_updater');
-  $config_updater->revert(['search_api.index.products'], FALSE);
+  $config_updater->revert([
+    'search_api.server.database',
+    'search_api.index.products',
+  ], FALSE);
+  $config_updater->import([
+    'facets.facet_source.search_api__views_page__product_catalog__page_1',
+    'facets.facet.brand',
+    'facets.facet.product_categories',
+    'facets.facet.special_categories',
+  ]);
   $index_storage = \Drupal::entityTypeManager()->getStorage('search_api_index');
   /** @var \Drupal\search_api\IndexInterface $index */
   $index = $index_storage->load('products');
