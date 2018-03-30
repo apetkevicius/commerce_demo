@@ -136,7 +136,7 @@ f8979cf3-072b-4c8f-8e6b-53cb38bf1ab0:
         unit: kg
       field_images:
         -
-          filename: '(GoPro) Hero Session5 -2.jpg'
+          filename: '(GoPro) Hero Session5.jpg'
   field_product_categories:
     - 66079146-8ff2-41a5-b4e2-cad8ebedf95b
     - ce786350-a6c5-44b4-8800-13da5bae619b
@@ -194,6 +194,8 @@ eb2c8a2c-9042-432d-a1fa-c3fe9545b9ad:
       field_images:
         -
           filename: '(Level) Headphones 1.jpg'
+        -
+          filename: '(Level) Headphones 2.jpg'
   field_product_categories:
     - 66079146-8ff2-41a5-b4e2-cad8ebedf95b
     - 44d4b889-953e-4542-be92-d026af6d62c6
@@ -595,7 +597,7 @@ a596d3dc-4d36-4c76-8789-36f76d526ef0:
         unit: kg
       field_images:
         -
-          filename: '(Gentlemen''s Hardware) The Adventure Begins Camping Mug - 1.jpg'
+          filename: '(Gentlemen''s Hardware) The Adventure Begins Camping Mug.jpg'
   field_product_categories:
     - 1cdb9879-80aa-4534-99f3-c3a09b851edd
     - 3fada410-028e-40a4-bec5-b175fc5372ac
@@ -786,6 +788,8 @@ b1ea9c4e-ed04-476a-8e9a-68b3e880899e:
       field_images:
         -
           filename: '(Modern Furnishings) White & Wood Chair - 1.jpg'
+        -
+          filename: '(Modern Furnishings) White & Wood Chair - 2.jpg'
   field_product_categories:
     - 1cdb9879-80aa-4534-99f3-c3a09b851edd
     - 3fada410-028e-40a4-bec5-b175fc5372ac
