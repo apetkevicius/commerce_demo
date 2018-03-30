@@ -1,12 +1,13 @@
 name: Commerce Demo
 type: module
-description: 'Provides demo content.'
+description: 'Provides a demo store for Commerce.'
 package: Commerce (contrib)
 core: 8.x
 dependencies:
   - color_field:color_field
   - commerce:commerce
   - commerce:commerce_cart
+  - commerce:commerce_checkout
   - commerce:commerce_product
   - commerce:commerce_tax
   - commerce_shipping:commerce_shipping

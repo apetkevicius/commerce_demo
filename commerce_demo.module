@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Provides demo content.
+ * Provides a demo store for Commerce.
  */
 
 use Drupal\Core\Url;
