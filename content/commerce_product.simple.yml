@@ -81,34 +81,6 @@ ace433d7-609c-447f-a727-9b2e68ecc68d:
           filename: '(NC-Inc) Makeup Brush Set.jpg'
   field_product_categories:
     - 41252968-6d82-4760-b0a5-8c2e15841f7a
-475ff46c-7943-4657-8336-e0970038c26f:
-  type: simple
-  status: '1'
-  title: 'Better Than Sex Mascara'
-  path: /product/better-sex-mascara
-  body:
-    value: "<p>Sustainable hot chicken street art stumptown tousled pour-over mixtape. Listicle raclette polaroid hashtag. Marfa prism hot chicken aesthetic banh mi messenger bag. Kitsch put a bird on it 3 wolf moon, flannel air plant palo santo direct trade cred. Jianbing art party flexitarian gastropub ethical gluten-free tumblr master cleanse locavore, helvetica health goth austin fingerstache prism pickled. Franzen sartorial next level, pug heirloom locavore deep v tilde chicharrones. Roof party cloud bread tumeric taiyaki farm-to-table flexitarian, butcher cold-pressed.</p>\r\n\r\n<p>Tofu distillery poke chicharrones, poutine austin shabby chic cronut kogi XOXO. Swag seitan VHS af cray, health goth retro activated charcoal flannel tote bag squid heirloom. Kitsch yuccie la croix microdosing, bespoke retro hexagon small batch distillery photo booth lomo. Fingerstache vice banh mi mumblecore master cleanse cornhole.&nbsp;</p>\r\n"
-    summary: ''
-    format: basic_html
-  field_brand: 9818d941-c0fd-4c5c-83d1-36c854e9d683
-  variations:
-    e97b0470-dd91-46b5-bdb6-9edb4612ce0d:
-      type: simple
-      sku: 2Faced-BTSM-1
-      title: 'Better Than Sex Mascara'
-      price:
-        number: '25.000000'
-        currency_code: USD
-      status: '1'
-      weight:
-        number: '1.000000'
-        unit: kg
-      field_images:
-        -
-          filename: '(Two Faced) Better Than Sex Mascara.jpg'
-  field_product_categories:
-    - f61537d9-c10b-4f93-81d7-f5f29d355c1e
-    - 41252968-6d82-4760-b0a5-8c2e15841f7a
 93470da2-a808-4069-89ee-e01f0d5ad0b7:
   type: simple
   status: '1'
